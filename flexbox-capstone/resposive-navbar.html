@@ -13,35 +13,32 @@
     <script src="https://kit.fontawesome.com/5b4f8e5a5c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="resposive-navbar.css">          
+    <link rel="stylesheet" type="text/css" href="responsive-navbar.css">
+    
+    <script>
+        $(document).ready(function(){
+            $("a.hamburger-icon").click(function(){
+                $("div.navbar").toggleClass("active");
+            });
+        })
+    </script>
 </head>
 <body>
     <div class="container">
-        <div class="nav-wrapper">
-            <div class="column left-column">
-                <div class="navigation-links company-name">
-                    <div class="company-name-link">
-                        <a href="#" class="logo-link">Awesome Company</a>
-                    </div>
-                </div>
-                <div class="navigation-links main-links">
-                    <div class="navigation-link main-link">
-                        <a href="#">Home</a>
-                    </div>
-                    <div class="navigation-link main-link">
-                        <a href="#">About</a>
-                    </div>
-                    <div class="navigation-link main-link">
-                        <a href="#">Contact Us</a>
-                    </div>
-                </div>
+        <div class="navbar">
+            <div class="hamburger-icon-wrapper">
+                <a href="#" class="hamburger-icon"><i class="fas fa-bars"></i></a>
             </div>
-            <div class="column right-column">
-                <div class="navigation-links account-links">
-                    <div class="navigation-link account-link">
-                        <a href="#">My Account</a>
-                    </div>
-                </div>
+            <div class=" company-name">
+                <a href="#" class="company-name-link">Awesome Company</a>
+            </div>
+            <div class="navigation-links main-links">
+                <a href="#" class="navigation-link main-link">Home</a>
+                <a href="#" class="navigation-link main-link">About</a>
+                <a href="#" class="navigation-link main-link">Contact Us</a>
+            </div>
+            <div class="navigation-links account-links">
+                <a href="#" class="navigation-link account-link">Account</a>
             </div>
         </div>
     </div>

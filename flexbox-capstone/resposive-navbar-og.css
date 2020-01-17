@@ -1,0 +1,101 @@
+html {
+        font-size: 15px;
+        font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #404F68;
+    /* height: 50px;
+    width: 100%; */
+    color: white;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: inherit;
+}
+
+.navigation-links-wrapper {
+    height: 100%;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navigation-links {
+    /* display: flex; */
+    align-items: center;
+    height: 100%;
+    
+}
+
+.navigation-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 10px;
+    
+}
+
+.navigation-links .navigation-link {
+    background-color: #1F2F47;
+    padding: 0 25px;
+}
+
+.navigation-link:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #404F68;
+}
+
+.company-name {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-wrapper .company-name .company-name-link {
+    padding: 0 70px;
+    text-transform: uppercase;
+}
+
+.hamburger-icon {
+    padding: 25px;
+    font-size: 1.8em;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .navigation-links-wrapper {
+        position: absolute;
+        flex-direction: column;
+    }
+
+    .main-links, .account-links {
+        display: contents;
+        width: 100%;
+    }
+
+    .company-name {
+        flex: auto;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex: initial;
+    }
+
+    .navigation-links .navigation-link {
+        height: 35px;
+    }
+}
